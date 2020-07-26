@@ -1,2 +1,4 @@
-# daily-report-crud-rest-rds
-RESTful Java service for CRUD operations of Covid infections rate table
+# Daily Report RESTful/CRUD service
+
+RESTful Java service for CRUD operations against Covid infections rate table.
+
