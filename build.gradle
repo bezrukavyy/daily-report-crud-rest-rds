@@ -1,11 +1,12 @@
 plugins {
     id 'groovy'
-    id 'java'
+    id 'application'
     id "io.freefair.lombok" version "5.1.0"
 }
 
-group 'io.infomate.exemplar.service.io.infomate.service.exemplar.daily'
+group 'io.infomate.service.exemplar.daily'
 version '1.0.0'
+mainClassName = 'io.infomate.service.exemplar.daily.DailyService'
 
 repositories {
     mavenCentral()
