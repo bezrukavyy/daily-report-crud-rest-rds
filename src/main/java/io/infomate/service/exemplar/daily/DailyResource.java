@@ -4,6 +4,7 @@ import io.infomate.service.exemplar.daily.dao.DailyEntry;
 import io.infomate.service.exemplar.daily.dao.DailyOperations;
 import io.infomate.service.exemplar.daily.dao.DailyOperationsImpl;
 
+import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -19,12 +20,8 @@ import java.util.List;
 @Path("/daily")
 public class DailyResource {
 
+    @Inject
     DailyOperations dailyOperations;
-
-    public DailyResource() {
-        MySqlConnectionManager connectionManager = MySqlConnectionManager.getInstance();
-        this.dailyOperations = new DailyOperationsImpl(connectionManager);
-    }
 
     @GET @Path("/dateLocation/{date}/{location}")
     @Produces(MediaType.APPLICATION_JSON)

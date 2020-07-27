@@ -22,9 +22,8 @@ To install locally in the `build` directory:
 This service was made to run against the AWS RDS/MySQL service. Please deploy RDS before you can continue this exercise.
 After the service is deployed, create a schema where the service table is going to be deployed. Table name is *daily* 
 and is hardcoded in the service. Single table schema for this table is located here:
-```
-resources/daily.sql
-```
+ 
+[Schema for the "daily" table](src/main/resources/daily.sql)
 
 ## Configure
 Database connection information needs to be provided to the program via environment variables:
